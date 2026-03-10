@@ -32,6 +32,25 @@ The system is composed of multiple specialized agents coordinated by an **orches
 * **ResourceAgent** – recommends relevant opportunities
 
 ---
+## Project Structure
+
+gograb-multi-agent-system
+│
+├── agents/
+│   ├── user_profile_agent.py
+│   ├── policy_reader_agent.py
+│   ├── eligibility_advocate.py
+│   ├── eligibility_skeptic.py
+│   ├── confidence_agent.py
+│   ├── resource_agent.py
+│   └── database_agent.py
+│
+├── orchestrator.py
+├── streamlit_app.py
+├── dashboard_ui.py
+├── auth_ui.py
+├── requirements.txt
+└── README.md
 
 ## 🔄 System Flow
 
