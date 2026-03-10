@@ -1,4 +1,4 @@
-# GoGrab — Multi-Agent Opportunity Discovery System
+# GoGrab : Multi-Agent Opportunity Discovery System
 
 GoGrab is a multi-agent AI system designed to help students discover relevant scholarships, internships, fellowships, and government schemes based on their eligibility.
 
@@ -53,15 +53,82 @@ User Input
 
 ---
 
-## ▶️ Running the Project
+## 📁 Project Structure
+
+```
+gograb-multi-agent-system/
+│
+├── student_app/
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── confidence_agent.py
+│   │   ├── database_agent.py
+│   │   ├── deliberation_agent.py
+│   │   ├── eligibility_advocate.py
+│   │   ├── eligibility_skeptic.py
+│   │   ├── policy_reader_agent.py
+│   │   ├── resource_agent.py
+│   │   └── user_profile_agent.py
+│   │
+│   ├── auth_ui.py
+│   ├── dashboard_ui.py
+│   ├── deliberation_log.py
+│   ├── orchestrator.py
+│   ├── streamlit_app.py
+│   └── requirements.txt
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/l1z333/gograb-multi-agent-system.git
+```
+
+Navigate to the project directory:
+
+```
+cd gograb-multi-agent-system/student_app
+```
 
 Install dependencies:
 
+```
 pip install -r requirements.txt
+```
 
-Run the application:
+---
 
+## ▶️ Running the Application
+
+Start the Streamlit application:
+
+```
 streamlit run streamlit_app.py
+```
+
+After running this command, Streamlit will start a local server and display something similar to:
+
+```
+Local URL: http://localhost:8501
+```
+
+Open that URL in your browser to access the **GoGrab dashboard**.
+
+---
+
+## 🧪 Example Workflow
+
+1. Create an account or log in using the authentication UI.
+2. Enter your academic and financial details.
+3. Select opportunity types (scholarships, internships, fellowships, etc.).
+4. Run the multi-agent analysis.
+5. View eligibility decisions and recommended opportunities.
 
 ---
 
@@ -70,4 +137,5 @@ streamlit run streamlit_app.py
 * Integrate real government policy APIs
 * Add LLM-based reasoning agents
 * Implement persistent database storage
-* Improve explainability of agent decisions
+* Improve the explainability and transparency of agent decisions
+* Add automated testing for agents
