@@ -1,2 +1,73 @@
 # GoGrab — Multi-Agent Opportunity Discovery System
-A multi-agent AI system that evaluates student eligibility and recommends scholarships, internships, and government schemes using debate-based reasoning.
+
+GoGrab is a multi-agent AI system designed to help students discover relevant scholarships, internships, fellowships, and government schemes based on their eligibility.
+
+The system uses a **debate-based reasoning architecture**, where multiple agents analyze user data, interpret policy constraints, and collaboratively determine eligibility with a confidence score.
+
+---
+
+## 🚀 Features
+
+* Multi-agent AI architecture
+* Policy-based eligibility analysis
+* Debate-based reasoning between agents
+* Confidence-based decision system
+* Opportunity discovery and recommendations
+* Interactive Streamlit dashboard
+
+---
+
+## 🧠 System Architecture
+
+The system is composed of multiple specialized agents coordinated by an **orchestrator**.
+
+### Core Agents
+
+* **UserProfileAgent** – extracts structured information from user input
+* **PolicyReaderAgent** – retrieves eligibility rules for schemes
+* **EligibilityAdvocateAgent** – argues why the user qualifies
+* **EligibilitySkepticAgent** – challenges eligibility by identifying violations
+* **ConfidenceEscalationAgent** – determines the final decision
+* **DatabaseAgent** – stores user profiles and decisions
+* **ResourceAgent** – recommends relevant opportunities
+
+---
+
+## 🔄 System Flow
+
+User Input
+→ Profile Extraction
+→ Policy Evaluation
+→ Agent Debate
+→ Confidence Decision
+→ Opportunity Recommendations
+
+---
+
+## 🛠 Tech Stack
+
+* Python
+* Streamlit
+* Multi-Agent Architecture
+* Rule-based reasoning
+
+---
+
+## ▶️ Running the Project
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the application:
+
+streamlit run streamlit_app.py
+
+---
+
+## 📌 Future Improvements
+
+* Integrate real government policy APIs
+* Add LLM-based reasoning agents
+* Implement persistent database storage
+* Improve explainability of agent decisions
